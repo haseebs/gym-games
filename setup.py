@@ -5,7 +5,7 @@ with open('README.md', 'r') as f:
 
 setup(
   name='gym-games',
-  version='1.0.3',
+  version='1.0.4',
   keywords=['AI', 'Reinforcement Learning', 'Games', 'Pygame', 'MinAtar'],
   description='This is a gym version of various games for reinforcenment learning.',
   url='https://github.com/qlan3/gym-games',
@@ -17,9 +17,9 @@ setup(
   packages=find_packages(),
   python_requires='>=3.5',
   install_requires=[
-    'numpy>=1.16.4',
+    'numpy>=1.21.0',
     'MinAtar>=1.0.4',
-    'gym>=0.13.0',
+    'gym>=0.19.0',
     'setuptools>=41.0.1',
     'pygame>=1.9.6',
     'ple>=0.0.1'

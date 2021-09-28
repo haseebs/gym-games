@@ -43,6 +43,7 @@ class BaseEnv(gym.Env):
   def step(self, action):
     reward = self.gameOb.act(self.action_set[action])
     done = self.gameOb.game_over()
+    return (self.gameOb.getScreenGrayscale(), reward, done, {})
     return (self.gameOb.getGameState(), reward, done, {})
     
   def reset(self):

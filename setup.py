@@ -24,7 +24,7 @@ setup(
     'pygame>=1.9.6',
     'ple>=0.0.1'
   ],
-  install_requires=[
+  dependency_links=[
     'git+https://github.com/kenjyoung/MinAtar@master#egg=MinAtar-1.0.8',
     'git+https://github.com/ntasfi/PyGame-Learning-Environment@master#egg=ple-0.0.1'
   ]

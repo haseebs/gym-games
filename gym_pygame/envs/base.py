@@ -31,7 +31,8 @@ class BaseEnv(gym.Env):
     self.viewer = None
     self.action_set = self.gameOb.getActionSet()
     self.action_space = spaces.Discrete(len(self.action_set))
-    self.observation_space = spaces.Box(-np.inf, np.inf, shape=(len(self.game.getGameState()),), dtype=np.float32)
+    #self.observation_space = spaces.Box(-np.inf, np.inf, shape=(len(self.game.getGameState()),), dtype=np.float32)
+    self.observation_space = spaces.Box(0, 255, shape=(self.gameOb.getScreenGrayscale().shape), dtype=int)
     self.gameOb.init()
 
   def get_ob(self, state):
